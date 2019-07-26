@@ -4,7 +4,7 @@
 //              interest rate and loan term.
 //Author: Cate Speakman
 
-function loan()
+function getLoan()
 {
     let loanAmtField = document.getElementById("loanAmount").value;
     loanAmtField = Number(loanAmtField);
@@ -27,10 +27,11 @@ function loan()
     document.getElementById("totalLoanCost").value=totalLoanCstField.toFixed(2);
 }
 
+
 function init()
 {
     const calculateBtn =document.getElementById("calculateBtn")
-    calculateBtn.onclick=loan;
+    calculateBtn.onclick=getLoan;
 }
 
 window.onload = init;
