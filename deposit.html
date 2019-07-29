@@ -8,6 +8,7 @@
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
     <!-- personalized CSS-->
+    <link rel="stylesheet" href="css/site.css">
     <link rel="stylesheet" href="css/deposit.css">
     <title>Mo' Money Mo' Problems Calculators</title>
   </head>
@@ -15,8 +16,10 @@
   <body>
     <main>
   <!-- this will be the main heading on the page-->
-    <section class="container header">
+    <header class="container header">
         <h1>Mo' Money Mo' Problems Calculators</h1> 
+    </header>
+
         <nav>
         <ul class="nav justify-content-center">
                 <li class="nav-item">
@@ -30,7 +33,7 @@
                 </li>
         </ul>
     </nav>
-    </section>
+    
 
     <!-- this portion of the page will contain an explanantion of what information to input for the calculator-->
     <section>
@@ -44,7 +47,7 @@
     <!-- this portion of the page will contain the input fields needed to calculate the future value of the one time deposit and total interest earned-->
     <section>
         <div class="container col-md-6 userinput">
-            <form>
+            <form name="futureValue">
                     <label for="initialDeposit">Initial Deposit (whole number):</label>
                     <input type ="number" id="initialDeposit" name="initialDeposit">
                     <br />
@@ -58,6 +61,7 @@
                     <br />
                     <br />
                    <input type="button" value="Calculate" id="calculateBtn">
+                   <input type="reset" value="Reset">
                     <br />
                     <br />
                     <label for="futureValue">Future Value:</label>
