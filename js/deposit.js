@@ -37,6 +37,8 @@ function getFutureValue()
     totalInterestEarnedField = parseFloat(totalInterestEarnedField.toFixed(2));
     document.getElementById("totalInterestEarned").value=totalInterestEarnedField.toFixed(2);
 }
+
+/* this fucntion will call the getFutureValue function to execute upon the click of the calculate button*/
 function init()
 {
     const calculateBtn = document.getElementById("calculateBtn")
