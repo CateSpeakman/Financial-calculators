@@ -38,6 +38,7 @@ function getLoan()
     document.getElementById("totalLoanCost").value=totalLoanCstField.toFixed(2);
 }
 
+/* this fucntion will call the getLoan function to execute upon the click of the calculate button*/
 
 function init()
 {
